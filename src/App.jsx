@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 
 export default function App() {
   const images = [
-    { src: 'public/pic1.jpg', alt: 'Closeup of a human eye' },
-    { src: 'public/pic2.jpg', alt: 'Rock that looks like a wave' },
-    { src: 'public/pic3.jpg', alt: 'Purple and white pansies' },
-    { src: 'public/pic4.jpg', alt: "Section of wall from a pharaoh's tomb" },
-    { src: 'public/pic5.jpg', alt: 'Large moth on a leaf' }
+    { src: '/public/pic1.jpg', alt: 'Closeup of a human eye' },
+    { src: '/public/pic2.jpg', alt: 'Rock that looks like a wave' },
+    { src: '/public/pic3.jpg', alt: 'Purple and white pansies' },
+    { src: '/public/pic4.jpg', alt: "Section of wall from a pharaoh's tomb" },
+    { src: '/public/pic5.jpg', alt: 'Large moth on a leaf' }
   ];
+  
 
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [isDark, setIsDark] = useState(false);
